@@ -17,15 +17,33 @@ p {color: (0,0,0);}
 	
 h1 {
 	
-    font-family:Dancing Script;
+    font-family:Alex Brush;
     font-size: 20;
     border: 10px double #ffffff;
 	} 
 	<!DOCTYPE html>
-<html>
-<head>
-<style>
-.container {
+
+
+<h2>Slide in Overlay from the Top</h2>
+<p>Hover over the image to see the effect.</p>
+
+<center><div class="container">
+  <img src="pinkSunsets.jpg" alt="Sunset" class="image">
+  <div class="overlay">
+    <div class="text"></div>
+  </div>
+</div>
+ 
+</body>
+</html>
+
+   
+h2{
+
+	font-family: Caveat Brush;
+    font-size: 16;
+   
+	.container {
   position: relative;
   width: 50%;
 }
@@ -64,29 +82,6 @@ h1 {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-</style>
-</head>
-<body>
-
-<h2>Slide in Overlay from the Top</h2>
-<p>Hover over the image to see the effect.</p>
-
-<center><div class="container">
-  <img src="pinkSunsets.jpg" alt="Sunset" class="image">
-  <div class="overlay">
-    <div class="text"></div>
-  </div>
-</div>
- 
-</body>
-</html>
-
-   
-h2{
-
-	font-family: Century Gothic;
-    font-size: 16;
-    
 
 </style>
 
@@ -94,6 +89,45 @@ h2{
 
 <h1>Sriya Mudigonda</h1>
 <u><h2>Biography</h2></u>
+	.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
 
 <p>My name is Sriya Mudigonda and I am fifteen years old, and I am a junior in Prospect High School. I love to swim and read.  Furthermore, 
 I have been dancing since I was six years old.  </p>
